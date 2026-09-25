@@ -1,0 +1,79 @@
+name: Translate Chapter
+run-name: chapter-${{ inputs.chapter_id }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      chapter_id:
+        description: 'ID unico del capitulo'
+        required: true
+        type: string
+      branch:
+        description: 'Rama incoming/ con las paginas originales'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: chapter-${{ inputs.chapter_id }}
+  cancel-in-progress: true
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout rama del capitulo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch }}
+          fetch-depth: 0
+
+      - name: Clonar motor manga-image-translator (pinned)
+        run: |
+          git clone --depth 1 https://github.com/zyddnys/manga-image-translator.git mit
+          echo "MIT_COMMIT=$(git -C mit rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Setup Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+          cache-dependency-path: mit/requirements.txt
+
+      - name: Cache modelos IA
+        uses: actions/cache@v4
+        with:
+          path: |
+            mit/models
+            ~/.cache/huggingface
+          key: mit-models-${{ env.MIT_COMMIT }}
+
+      - name: Instalar dependencias (torch CPU primero)
+        run: |
+          pip install --quiet torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet -r mit/requirements.txt
+
+      - name: Ejecutar pipeline (deteccion + OCR + inpainting)
+        env:
+          PYTHONPATH: ${{ github.workspace }}/mit
+          PYTHONUNBUFFERED: '1'
+        run: python pipeline/pipeline.py --input pages --output out
+
+      - name: Subir artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: chapter-${{ inputs.chapter_id }}
+          path: out/
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Borrar rama temporal (limpieza)
+        if: always()
+        run: |
+          git config user.name "chapter-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git push origin --delete "${{ inputs.branch }}" || echo "rama ya borrada"

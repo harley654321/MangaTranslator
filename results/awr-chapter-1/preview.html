@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Academy's Weapon Replicator — Capítulo 1 · Preview MangaTranslator</title>
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#e6edf3; --mut:#8b949e; --acc:#4f8ff7; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,'Segoe UI',Roboto,sans-serif; }
+  header { padding:28px 20px 18px; max-width:900px; margin:0 auto; }
+  h1 { font-size:clamp(20px,4vw,30px); letter-spacing:-.5px; }
+  .sub { color:var(--mut); margin-top:6px; font-size:14px; }
+  .stats { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  .stat { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:8px 14px; font-size:13px; }
+  .stat b { color:var(--acc); }
+  nav { position:sticky; top:0; z-index:50; background:rgba(13,17,23,.95); backdrop-filter:blur(8px); border-bottom:1px solid var(--border); display:flex; gap:6px; overflow-x:auto; padding:10px 16px; }
+  .thumb { flex:0 0 46px; height:64px; border-radius:6px; border:2px solid transparent; background-size:cover; background-position:top center; cursor:pointer; position:relative; opacity:.75; }
+  .thumb.active { border-color:var(--acc); opacity:1; }
+  .thumb span { position:absolute; bottom:2px; right:4px; font-size:10px; background:#000a; padding:1px 4px; border-radius:4px; }
+  main { max-width:900px; margin:0 auto; padding:20px; }
+  .page { margin-bottom:48px; }
+  .page-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+  h2 { font-size:17px; }
+  .badges { display:flex; gap:8px; }
+  .chip { font-size:11px; color:var(--mut); border:1px solid var(--border); border-radius:99px; padding:3px 10px; }
+  .chip-a { color:var(--acc); border-color:var(--acc); }
+  .compare { position:relative; width:100%; border:1px solid var(--border); border-radius:10px; overflow:hidden; background:#000; }
+  .compare img { display:block; width:100%; }
+  .after-wrap { position:absolute; inset:0; overflow:hidden; clip-path:inset(0 50% 0 0); }
+  .handle { position:absolute; top:0; bottom:0; left:50%; width:2px; background:var(--acc); }
+  .handle::after { content:'◀▶'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:var(--acc); color:#fff; font-size:11px; padding:6px 8px; border-radius:99px; white-space:nowrap; }
+  .range { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize; }
+  .tag { position:absolute; top:10px; font-size:11px; padding:4px 10px; border-radius:99px; background:#000b; }
+  .tag-b { left:10px; } .tag-a { right:10px; color:#bfdbfe; }
+  .dialogues { margin-top:12px; background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 16px; }
+  summary { cursor:pointer; color:var(--mut); font-size:13px; }
+  table { width:100%; border-collapse:collapse; margin-top:10px; font-size:13px; }
+  th { text-align:left; color:var(--mut); font-weight:600; padding:6px 8px; border-bottom:1px solid var(--border); }
+  td { padding:7px 8px; border-bottom:1px solid #21262d; vertical-align:top; }
+  .en { color:var(--mut); width:50%; }
+  .es { color:var(--text); }
+  footer { text-align:center; color:var(--mut); font-size:12px; padding:30px 20px 50px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>The Academy's Weapon Replicator · Capítulo 1</h1>
+  <div class="sub">Preview de traducción — demo del flujo MangaTranslator · fuente: manhuaus.club</div>
+  <div class="stats">
+    <span class="stat">Páginas: <b>14</b></span>
+    <span class="stat">Burbujas detectadas: <b>186</b></span>
+    <span class="stat">Procesamiento GitHub Actions: <b>19m30s</b></span>
+    <span class="stat">Motor: <b>detección ctd + OCR 48px + inpainting LaMa</b></span>
+  </div>
+</header>
+<nav><button class="thumb" data-i="1" style="background-image:url(pages/overlay/001.webp)"><span>1</span></button><button class="thumb" data-i="2" style="background-image:url(pages/overlay/002.webp)"><span>2</span></button><button class="thumb" data-i="3" style="background-image:url(pages/overlay/003.webp)"><span>3</span></button><button class="thumb" data-i="4" style="background-image:url(pages/overlay/004.webp)"><span>4</span></button><button class="thumb" data-i="5" style="background-image:url(pages/overlay/005.webp)"><span>5</span></button><button class="thumb" data-i="6" style="background-image:url(pages/overlay/006.webp)"><span>6</span></button><button class="thumb" data-i="7" style="background-image:url(pages/overlay/007.webp)"><span>7</span></button><button class="thumb" data-i="8" style="background-image:url(pages/overlay/008.webp)"><span>8</span></button><button class="thumb" data-i="9" style="background-image:url(pages/overlay/009.webp)"><span>9</span></button><button class="thumb" data-i="10" style="background-image:url(pages/overlay/010.webp)"><span>10</span></button><button class="thumb" data-i="11" style="background-image:url(pages/overlay/011.webp)"><span>11</span></button><button class="thumb" data-i="12" style="background-image:url(pages/overlay/012.webp)"><span>12</span></button><button class="thumb" data-i="13" style="background-image:url(pages/overlay/013.webp)"><span>13</span></button><button class="thumb" data-i="14" style="background-image:url(pages/overlay/014.webp)"><span>14</span></button></nav>
+<main>
+<section class="page" id="p1">
+  <div class="page-head">
+    <h2>Página 1</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 13889px">
+    <img class="before" src="pages/original/001.webp" alt="original 1" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/001.webp" alt="traducida 1" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 1">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p2">
+  <div class="page-head">
+    <h2>Página 2</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 14860px">
+    <img class="before" src="pages/original/002.webp" alt="original 2" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/002.webp" alt="traducida 2" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 2">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p3">
+  <div class="page-head">
+    <h2>Página 3</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 14843px">
+    <img class="before" src="pages/original/003.webp" alt="original 3" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/003.webp" alt="traducida 3" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 3">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p4">
+  <div class="page-head">
+    <h2>Página 4</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 14772px">
+    <img class="before" src="pages/original/004.webp" alt="original 4" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/004.webp" alt="traducida 4" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 4">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p5">
+  <div class="page-head">
+    <h2>Página 5</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 15704px">
+    <img class="before" src="pages/original/005.webp" alt="original 5" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/005.webp" alt="traducida 5" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 5">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p6">
+  <div class="page-head">
+    <h2>Página 6</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 14347px">
+    <img class="before" src="pages/original/006.webp" alt="original 6" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/006.webp" alt="traducida 6" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 6">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p7">
+  <div class="page-head">
+    <h2>Página 7</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 15141px">
+    <img class="before" src="pages/original/007.webp" alt="original 7" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/007.webp" alt="traducida 7" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 7">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p8">
+  <div class="page-head">
+    <h2>Página 8</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 14171px">
+    <img class="before" src="pages/original/008.webp" alt="original 8" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/008.webp" alt="traducida 8" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 8">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p9">
+  <div class="page-head">
+    <h2>Página 9</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 12433px">
+    <img class="before" src="pages/original/009.webp" alt="original 9" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/009.webp" alt="traducida 9" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 9">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p10">
+  <div class="page-head">
+    <h2>Página 10</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 14380px">
+    <img class="before" src="pages/original/010.webp" alt="original 10" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/010.webp" alt="traducida 10" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 10">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p11">
+  <div class="page-head">
+    <h2>Página 11</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 14000px">
+    <img class="before" src="pages/original/011.webp" alt="original 11" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/011.webp" alt="traducida 11" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 11">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p12">
+  <div class="page-head">
+    <h2>Página 12</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 13299px">
+    <img class="before" src="pages/original/012.webp" alt="original 12" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/012.webp" alt="traducida 12" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 12">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p13">
+  <div class="page-head">
+    <h2>Página 13</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 13976px">
+    <img class="before" src="pages/original/013.webp" alt="original 13" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/013.webp" alt="traducida 13" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 13">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section>
+<section class="page" id="p14">
+  <div class="page-head">
+    <h2>Página 14</h2>
+    <div class="badges"><span class="chip">Antes / Después</span><span class="chip chip-a">arrastra el control</span></div>
+  </div>
+  <div class="compare" style="--ph: 12972px">
+    <img class="before" src="pages/original/014.webp" alt="original 14" loading="lazy">
+    <div class="after-wrap"><img class="after" src="pages/overlay/014.webp" alt="traducida 14" loading="lazy"><div class="handle"></div></div>
+    <input class="range" type="range" min="0" max="100" value="50" aria-label="comparar página 14">
+    <span class="tag tag-b">Original</span><span class="tag tag-a">Traducido</span>
+  </div>
+  <details class="dialogues"><summary>Diálogos detectados (EN → ES)</summary><table><thead><tr><th>Inglés (OCR)</th><th>Español</th></tr></thead><tbody><tr><td class="en">A SUB-OUESTHAS</td><td class="es">UNA MISIÓN SECUNDARIA</td></tr><tr><td class="en">TY</td><td class="es">HA APARECIDO</td></tr><tr><td class="en">TITL</td><td class="es">TÍTULO</td></tr><tr><td class="en">FATHERS COMMANI</td><td class="es">LA ORDEN DEL PADRE</td></tr><tr><td class="en">ENFERS PATIENCE WITH FRONDIERS INDOLENCE HAS REACHED ITS ABSOLUTE LIMIT</td><td class="es">LA PACIENCIA DE ENFER CON LA INDOLENCIA DE FRONDIER HA LLEGADO A SU LÍMITE ABSOLUTO</td></tr><tr><td class="en">IBJECTIVE</td><td class="es">OBJETIVO</td></tr><tr><td class="en">!T CONSTELL THIS SEMESTER</td><td class="es">ENTRA EN EL TOP 10 ESTE SEMESTRE</td></tr><tr><td class="en">REWARI</td><td class="es">RECOMPENSA</td></tr><tr><td class="en">GAIN ENFERS RECOGNITION</td><td class="es">GANARSE EL RECONOCIMIENTO DE ENFER</td></tr><tr><td class="en">IMMEDIATE DISOWNMENT.</td><td class="es">DESHEREDAMIENTO INMEDIATO.</td></tr><tr><td class="en">둥</td><td class="es">...</td></tr><tr><td class="en">AS IF THATS EVEN POSSIBLE</td><td class="es">COMO SI ESO FUERA POSIBLE</td></tr><tr><td class="en">EVEN T KNOW HOW COMPLETELY IMPOSSIBLE THAT IS!</td><td class="es">¡INCLUSO YO SÉ CUÁN IMPOSIBLE ES ESO!</td></tr><tr><td class="en">AN UNPLAYABLE AND IRASHY GAME</td><td class="es">UN JUEGO INJUGABLE Y BASURA</td></tr><tr><td class="en">[아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">자제해주세요!</td><td class="es">¡Por favor, abstente!</td></tr><tr><td class="en">[ 아무복 독자님 ]</td><td class="es">[Estimado lector de Amubok]</td></tr><tr><td class="en">CARRO?OON</td><td class="es">CARROTOON</td></tr><tr><td class="en">콘티 이아영채색부적</td><td class="es">Storyboard: Lee Ah-young · Color: Buchik</td></tr><tr><td class="en">본작품은저작권법에의해보호를받는저작물이므로 불법복제와캡처등을이용한무단전재밑유포,공유를금합니다</td><td class="es">Esta obra está protegida por derechos de autor. Prohibida su reproducción y distribución no autorizadas.</td></tr><tr><td class="en">연재 문의 I carrotoon@kwbooks.co.kr</td><td class="es">Consultas: carrotoon@kwbooks.co.kr</td></tr><tr><td class="en">RECRUITING</td><td class="es">RECLUTAMOS</td></tr><tr><td class="en">Positions Available</td><td class="es">Puestos disponibles</td></tr><tr><td class="en">IOINUSTOWORKONBIGTITLES,GETYOURNAMEINTHECREDITS USEFASTBOTS,LEARNPROTRICKS,ANDREACHTHOUSANDSOF READERS. YOURBREAKTHROUGHSTARTSNOW!</td><td class="es">ÚNETE PARA TRABAJAR EN GRANDES TÍTULOS, PON TU NOMBRE EN LOS CRÉDITOS, APRENDE TRUCOS PRO Y ALCANZA A MILES</td></tr></tbody></table></details>
+</section></main>
+<footer>Detectado, limpiado y remaquetado en la nube con GitHub Actions (gratis) · manga-image-translator · las traducciones se renderizan en el lector de la extensión</footer>
+<script>
+document.querySelectorAll('.range').forEach(function(r) {
+  var wrap = r.closest('.compare');
+  var after = wrap.querySelector('.after-wrap');
+  var handle = wrap.querySelector('.handle');
+  function set(v) {
+    after.style.clipPath = 'inset(0 ' + (100 - v) + '% 0 0)';
+    handle.style.left = v + '%';
+  }
+  r.addEventListener('input', function() { set(r.value); });
+});
+document.querySelectorAll('.thumb').forEach(function(t) {
+  t.addEventListener('click', function() {
+    document.getElementById('p' + t.dataset.i).scrollIntoView({behavior:'smooth'});
+  });
+  var io = new IntersectionObserver(function(es) {
+    es.forEach(function(e) {
+      if (e.isIntersecting) {
+        document.querySelectorAll('.thumb').forEach(function(x) { x.classList.remove('active'); });
+        t.classList.add('active');
+      }
+    });
+  }, {rootMargin:'-40% 0px -50% 0px'});
+  io.observe(document.getElementById('p' + t.dataset.i));
+});
+</script>
+</body>
+</html>

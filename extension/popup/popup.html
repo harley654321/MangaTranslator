@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Manga Translator</h1>
+  <p class="hint">Configura una vez y toca el boton "ES" en cualquier capitulo.</p>
+
+  <label>GitHub PAT (fine-grained: Contents RW, Actions RW)</label>
+  <input id="pat" type="password" placeholder="github_pat_... o ghp_...">
+
+  <label>Owner de GitHub</label>
+  <input id="owner" type="text" placeholder="tu-usuario">
+
+  <label>Repo</label>
+  <input id="repo" type="text" placeholder="MangaTranslator">
+
+  <label>API de traduccion (compatible OpenAI)</label>
+  <input id="apiUrl" type="text" placeholder="https://openrouter.ai/api/v1">
+
+  <label>Modelo</label>
+  <input id="model" type="text" placeholder="openrouter/auto, gpt-4o-mini, llama-3.3-70b...">
+
+  <label>API key</label>
+  <input id="apiKey" type="password" placeholder="sk-or-v1... (solo vive en tu telefono)">
+
+  <label>Idioma destino</label>
+  <input id="targetLang" type="text" placeholder="Espanol neutro latinoamericano">
+
+  <div class="row">
+    <button id="testBtn">Probar</button>
+    <button id="saveBtn" class="primary">Guardar</button>
+  </div>
+  <button id="translateBtn" class="big">Traducir este capitulo</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
